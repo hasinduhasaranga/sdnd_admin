@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="../assets/"
+  data-assets-path="assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -23,7 +23,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="../assets/img/favicon/favicon.ico"
+      href="assets/img/favicon/favicon.ico"
     />
 
     <!-- Fonts -->
@@ -35,33 +35,33 @@
     />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
     <link
       rel="stylesheet"
-      href="../assets/vendor/css/core.css"
+      href="assets/vendor/css/core.css"
       class="template-customizer-core-css"
     />
     <link
       rel="stylesheet"
-      href="../assets/vendor/css/theme-default.css"
+      href="assets/vendor/css/theme-default.css"
       class="template-customizer-theme-css"
     />
-    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
 
     <!-- Vendors CSS -->
     <link
       rel="stylesheet"
-      href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+      href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
     />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/helpers.js"></script>
 
-    <script src="../assets/js/config.js"></script>
+    <script src="assets/js/config.js"></script>
   </head>
 
   <body>
@@ -77,7 +77,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <span class="app-brand-logo demo">
-                <img src="../assets/img/logo/logo (5).png" width="40" alt="" />
+                <img src="assets/img/logo/logo (5).png" width="40" alt="" />
               </span>
               <span
                 class="app-brand-text demo menu-text fw-bolder ms-2 text-uppercase"
@@ -139,7 +139,7 @@
           <!-- Navbar -->
 
           <nav
-            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar"
           >
             <div
@@ -186,7 +186,7 @@
                   >
                     <div class="avatar avatar-online">
                       <img
-                        src="../assets/img/avatars/1.png"
+                        src="assets/img/avatars/1.png"
                         alt
                         class="w-px-40 h-auto rounded-circle"
                       />
@@ -199,7 +199,7 @@
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
                               <img
-                                src="../assets/img/avatars/1.png"
+                                src="assets/img/avatars/1.png"
                                 alt
                                 class="w-px-40 h-auto rounded-circle"
                               />
@@ -262,122 +262,160 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light"> </span>Expenses Management
-              </h4>
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="fw-bold mb-0">
+                  <span class="text-muted fw-light"></span>Expenses Management
+                </h4>
+                <a href="addExpence.html" class="btn btn-primary">
+                  <i class="bx bx-plus me-1"></i>Add New Expense
+                </a>
+              </div>
 
-              <div class="row justify-content-center">
-                <div class="">
-                  <div class="card mb-4">
-                    <h5 class="card-header">Expenses Details</h5>
-
-                    <div class="card-body">
-                      <div class="mb-3">
-                        <label
-                          for="exampleFormControlSelect1"
-                          class="form-label"
-                          >Select Project</label
-                        >
-                        <select
-                          class="form-select"
-                          id="exampleFormControlSelect1"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Select project</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label
-                          for="exampleFormControlSelect1"
-                          class="form-label"
-                          >Select Category</label
-                        >
-                        <select
-                          class="form-select"
-                          id="exampleFormControlSelect1"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Select category</option>
-                          <option value="1">Labour</option>
-                          <option value="2">Materials</option>
-                          <option value="3">Transport</option>
-                          <option value="4">Tools</option>
-                          <option value="5">Other Expense</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="defaultFormControlInput" class="form-label"
-                          >Received Materials (If Materials category selected)</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="defaultFormControlInput"
-                          placeholder="received materials"
-                          aria-describedby="defaultFormControlHelp"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="defaultFormControlInput" class="form-label"
-                          >Description</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="defaultFormControlInput"
-                          placeholder="description"
-                          aria-describedby="defaultFormControlHelp"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="defaultFormControlInput" class="form-label"
-                          >Amount</label
-                        >
-                        <input
-                          type="number"
-                          class="form-control"
-                          id="defaultFormControlInput"
-                          placeholder="LKR 00.00"
-                          aria-describedby="defaultFormControlHelp"
-                        />
-                      </div>
-                      <div class="mb-3 row">
-                        <label
-                          for="html5-date-input"
-                          class="col-md-1 col-form-label"
-                          >Date</label
-                        >
-                        <div class="col-md-11">
-                          <input
-                            class="form-control"
-                            type="date"
-                            value="2021-06-18"
-                            id="html5-date-input"
-                          />
-                        </div>
-                      </div>
-                      
-                      
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="card-body">
-                  <div class="row mt-3">
-                    <div class="d-grid gap-2 col-lg-6 mx-auto">
-                      <button class="btn btn-primary btn-lg" type="button">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
+              <!-- Expenses Table -->
+              <div class="card">
+                <h5 class="card-header">Expenses List</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Project</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Received Materials</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>1</td>
+                        <td>Luxury Villa - Colombo</td>
+                        <td><span class="badge bg-label-primary">Materials</span></td>
+                        <td>Cement and Steel bars</td>
+                        <td>50 bags cement, 100 steel bars</td>
+                        <td>LKR 125,000.00</td>
+                        <td>2025-12-10</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-edit-alt me-1"></i> Edit
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-trash me-1"></i> Delete
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Office Building - Kandy</td>
+                        <td><span class="badge bg-label-success">Labour</span></td>
+                        <td>Mason work payment</td>
+                        <td>-</td>
+                        <td>LKR 85,000.00</td>
+                        <td>2025-12-12</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-edit-alt me-1"></i> Edit
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-trash me-1"></i> Delete
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Luxury Villa - Colombo</td>
+                        <td><span class="badge bg-label-warning">Transport</span></td>
+                        <td>Material transportation</td>
+                        <td>-</td>
+                        <td>LKR 15,000.00</td>
+                        <td>2025-12-13</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-edit-alt me-1"></i> Edit
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-trash me-1"></i> Delete
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Shopping Mall - Galle</td>
+                        <td><span class="badge bg-label-info">Tools</span></td>
+                        <td>Power tools purchase</td>
+                        <td>2 drilling machines, 1 welding set</td>
+                        <td>LKR 95,000.00</td>
+                        <td>2025-12-14</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-edit-alt me-1"></i> Edit
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-trash me-1"></i> Delete
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Office Building - Kandy</td>
+                        <td><span class="badge bg-label-secondary">Other Expense</span></td>
+                        <td>Site maintenance</td>
+                        <td>-</td>
+                        <td>LKR 20,000.00</td>
+                        <td>2025-12-15</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-edit-alt me-1"></i> Edit
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i class="bx bx-trash me-1"></i> Delete
+                              </a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-            <!-- / Content -->
+
+                 <!-- / Content -->
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
@@ -417,22 +455,22 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../assets/vendor/libs/popper/popper.js"></script>
-    <script src="../assets/vendor/js/bootstrap.js"></script>
-    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
 
     <!-- Main JS -->
-    <script src="../assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <!-- Page JS -->
 
-    <script src="../assets/js/form-basic-inputs.js"></script>
+    <script src="assets/js/form-basic-inputs.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
